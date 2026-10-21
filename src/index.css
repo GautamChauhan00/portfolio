@@ -363,12 +363,18 @@ main { padding-top: var(--nav-h); }
 /* Name */
 .hero-name {
   font-family: var(--font-serif);
-  font-size: clamp(44px, 7vw, 70px);
+  font-size: clamp(32px, 4.2vw, 48px);
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 1.08;
+  line-height: 1.12;
   color: var(--fg);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+.hero-word {
+  display: inline-block;
+  white-space: nowrap;
 }
 
 .hero-name .letter {
@@ -379,7 +385,7 @@ main { padding-top: var(--nav-h); }
   transform: translateY(-5px);
   color: var(--accent);
 }
-.hero-name .word { display: inline-block; margin-right: 0.18em; }
+.hero-name .word { display: inline-block; margin-right: 0.22em; }
 
 .hero-at {
   font-family: var(--font-serif);
@@ -1151,7 +1157,10 @@ main { padding-top: var(--nav-h); }
   .timeline-header { flex-direction: column; gap: 4px; }
   .timeline-duration { order: -1; }
 
-  .hero-name { font-size: clamp(36px, 10vw, 54px); }
+  .hero-name {
+    font-size: clamp(28px, 7vw, 38px);
+    white-space: normal;
+  }
 
   .connect-link { flex-direction: column; align-items: flex-start; gap: 8px; }
 
@@ -1163,6 +1172,7 @@ main { padding-top: var(--nav-h); }
   .section { padding: 56px 0; }
   .hero { padding: 56px 0 40px; }
   .hero-photo { max-width: 160px; }
+  .hero-name { font-size: clamp(24px, 7.5vw, 30px); }
   /* keep buttons in a row even on small phones */
   .hero-cta { flex-direction: row; flex-wrap: wrap; align-items: center; }
   .timeline-num { width: 30px; height: 30px; font-size: 13px; }

@@ -34,11 +34,14 @@ export default function Hero() {
 
           {/* Name */}
           <h1 className="hero-name">
-            {NAME.split('').map((ch, i) =>
-              ch === ' '
-                ? <span key={i} className="word"> </span>
-                : <span key={i} className="letter">{ch}</span>
-            )}
+            {NAME.split(' ').map((word, wIdx) => (
+              <span key={wIdx} className="hero-word">
+                {word.split('').map((ch, cIdx) => (
+                  <span key={cIdx} className="letter">{ch}</span>
+                ))}
+                {wIdx < NAME.split(' ').length - 1 && <span className="word">&nbsp;</span>}
+              </span>
+            ))}
           </h1>
 
           {/* Subtitle */}
