@@ -46,7 +46,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="hero-subtitle">
-            Full Stack Web Developer experienced in building full-stack applications with the MERN stack (MongoDB, Express.js, React.js, Node.js) and modern WordPress solutions. Passionate about building clean, scalable solutions and solving real-world problems.
+            Motivated Full Stack Web Developer with hands-on experience building full-stack applications across the MERN stack (MongoDB, Express.js, React.js, Node.js) and WordPress. Skilled in engineering RESTful APIs, responsive interfaces, and database systems — passionate about solving real-world problems with clean, scalable code.
           </p>
 
           {/* Location + live clock */}
